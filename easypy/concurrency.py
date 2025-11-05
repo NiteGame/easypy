@@ -276,6 +276,7 @@ class MultiException(PException, metaclass=MultiExceptionMeta):
         return colorize("\n" + text)
 
     def _get_buffer(self, exc_num_prefix='', unique_tbs_to_exc_num={}, **kw):
+        breakpoint()
         if kw.get("color", True):
             normalize_color = lambda x: x
         else:
